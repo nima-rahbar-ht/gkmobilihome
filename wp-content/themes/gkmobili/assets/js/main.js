@@ -121,6 +121,11 @@ jQuery(function ($) {
 	 */
 $(document).ready(function () {
 	$(".pc-header-layout-1__header_toolbar .user-panel__item").eq(1).remove();
+
+	jQuery(".product-loop-title > a, .basement_one").attr(
+		"style",
+		"color: #000 !important;"
+	);
 });
 
 
