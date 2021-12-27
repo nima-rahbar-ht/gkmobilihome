@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
     <!-- site-search -->
     <form class="product-search__form woocommerce-product-search" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
         <div class="product-search__input-group">
-            <label class="d-n" for="woocommerce-product-search-field-<?php echo isset($index) ? absint($index) : 0; ?>"><?php echo esc_attr(premmerce_option('shop-search-placeholder')); ?></label>
+            <label for="woocommerce-product-search-field-<?php echo isset($index) ? absint($index) : 0; ?>"><?php echo esc_attr(premmerce_option('shop-search-placeholder')); ?></label>
             <input class="product-search__form-control search-field autocomplete__input" id="woocommerce-product-search-field-<?php echo isset($index) ? absint($index) : 0; ?>" autocomplete="off" type="text" placeholder="<?php echo esc_attr(premmerce_option('shop-search-placeholder')); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 
             <div class="product-search__input-group-btn">
