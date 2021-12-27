@@ -116,7 +116,12 @@ jQuery(function ($) {
 	}
 
 
-
+	/**
+	 * WAVE Tool Fixes
+	 */
+$(document).ready(function () {
+	$(".pc-header-layout-1__header_toolbar .user-panel__item").eq(1).remove();
+});
 
 
 
