@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Blocks
+   ========================================================================== */
+.featured-boxes {
+	margin: 0 -10px;
+	display: flex;
+
+	.box {
+		padding: 0 10px;
+		flex-basis: 50%;
+
+		.box__inner {
+			display: block;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+.custom-title-wrapper {
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+
+	h2 {
+		font-size: 26px;
+		font-weight: 700;
+		display: inline-block;
+		padding: 0 70px;
+		position: relative;
+		color: $text-black;
+		line-height: 1;
+
+		&:before,
+		&:after {
+			display: block;
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 50px;
+			left: 0;
+			top: 50%;
+			margin-top: -1px;
+			background-color: #cccccc;
+		}
+
+		&:after {
+			left: auto;
+			right: 0;
+		}
+
+		img {
+			height: 29px;
+			margin-right: 5px;
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+		}
+	}
+
+	.link-read-more {
+		line-height: 81px;
+		float: right;
+		font-size: 15px;
+		font-weight: 700;
+		color: $text-grey !important;
+		position: relative;
+		&:hover {
+			text-decoration: none !important;
+			&:after {
+				width: 100%;
+			}
+		}
+		&:after {
+			content: "";
+			width: 0%;
+			position: absolute;
+			height: 2px;
+			background-color: $text-grey;
+			bottom: 29px;
+			left: 0;
+			transition: all 200ms linear;
+		}
+	}
+}

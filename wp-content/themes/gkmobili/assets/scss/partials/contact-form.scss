@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+.text-content {
+	h3 {
+		&.contact-form-title {
+			font-size: 26px;
+			font-weight: 600;
+			color: #000000;
+			text-align: center;
+			position: relative;
+			width: fit-content;
+			width: -webkit-fit-content;
+			margin: 0 auto 42px auto;
+
+			&:before {
+				content: "";
+				height: 2px;
+				width: 51px;
+				background-color: #cccccc;
+				position: absolute;
+				left: -99px;
+				top: 50%;
+			}
+			&:after {
+				content: "";
+				height: 2px;
+				width: 51px;
+				background-color: #cccccc;
+				position: absolute;
+				right: -99px;
+				top: 50%;
+			}
+		}
+	}
+}
+.wpcf7-form {
+	padding: 50px 30px 50px 30px;
+	background-color: #ffffff;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	br {
+		display: none;
+	}
+	label {
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 20px;
+		color: #626262;
+		text-transform: uppercase;
+		margin-top: 26px;
+		&:first-of-type {
+			padding-top: 26px;
+			margin-top: 0;
+			border-top: 1px solid #f7f7f7;
+		}
+		sup {
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 20px;
+			color: #ff6200;
+		}
+	}
+	.wpcf7-form-control-wrap {
+		margin-top: 9px !important;
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			padding: 18px 20px !important;
+			background-color: #f2f2f2 !important;
+			border: 1px solid #9c9c9c !important;
+			font-size: 13px !important;
+			font-weight: 300 !important;
+			line-height: 20px !important;
+			color: #808080 !important;
+		}
+		textarea {
+			resize: none;
+			max-height: 126px;
+		}
+
+		&.acceptance-362 {
+			margin-top: 26px !important;
+			display: block;
+			.wpcf7-acceptance {
+				border: none;
+				display: block;
+				padding: 0;
+				box-shadow: none;
+				.wpcf7-list-item {
+					display: block;
+				}
+
+				label {
+					font-weight: 400;
+					text-transform: none;
+					border: none;
+					padding-top: 0;
+					margin-top: 26px;
+				}
+			}
+		}
+	}
+	input[type="submit"] {
+		font-size: 24px !important;
+		font-weight: 600 !important;
+		line-height: 26px !important;
+		color: #14723e !important;
+		padding: 20px 10px !important;
+		text-align: center !important;
+		background-color: #afca05 !important;
+		width: 100%;
+		border: none !important;
+		margin-top: 35px;
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
+
+/* custom checkbox styling for contact form 7 checkbox */
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0;
+}
+.wpcf7-list-item label {
+	position: relative;
+	cursor: pointer;
+}
+.wpcf7-list-item input[type="checkbox"] {
+	/*position: relative;*/
+	position: absolute;
+	visibility: hidden;
+	width: 22px;
+	height: 22px;
+	top: -2px;
+	left: 0;
+}
+.wpcf7-list-item input[type="checkbox"] + span:before {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 22px;
+	width: 22px;
+	top: -2px;
+	left: 0px;
+	background-image: url(../images/checkbox-uncheck.svg);
+}
+.wpcf7-list-item input[type="checkbox"] + span:after {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 22px;
+	width: 22px;
+	top: -2px;
+	left: 0px;
+	background-image: url(../images/checkbox-checked.svg);
+	visibility: hidden;
+}
+.wpcf7-list-item input[type="checkbox"]:checked + span:before {
+	visibility: hidden;
+}
+.wpcf7-list-item input[type="checkbox"]:checked + span:after {
+	visibility: visible;
+}
+.wpcf7-list-item-label {
+	margin-left: 40px;
+	display: inline-block;
+}

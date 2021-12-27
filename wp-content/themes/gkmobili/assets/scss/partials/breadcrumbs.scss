@@ -1,0 +1,32 @@
+.page__breadcrumbs {
+	border-bottom: none;
+	// margin: 0 0 50px;
+	margin: 0;
+	padding: 15px 0 50px;
+
+	@include media("<md") {
+		// margin-bottom: 15px;
+		margin-bottom: 0;
+		padding-bottom: 15px;
+	}
+}
+
+.breadcrumbs {
+	color: $text-grey;
+	font-size: 12px;
+	letter-spacing: -0.025em;
+	line-height: 16px;
+}
+
+.breadcrumbs--woocommerce .breadcrumbs__link {
+	color: $text-grey;
+	text-decoration: none;
+}
+
+.breadcrumbs--woocommerce .breadcrumbs__item {
+	color: $text-grey;
+}
+
+.breadcrumbs--woocommerce .breadcrumbs__item:not(:last-child)::after {
+	color: $text-grey;
+}

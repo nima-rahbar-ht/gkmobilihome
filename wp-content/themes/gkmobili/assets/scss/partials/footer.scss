@@ -1,0 +1,244 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.page__fgroup {
+	border-top: 0 none;
+}
+
+.page__basement {
+	border-top: 0 none;
+	background: none;
+}
+
+.by-hellenic {
+	display: flex;
+	float: right;
+	align-items: center;
+
+	span {
+		font-size: 8px;
+		color: #9c9c9c;
+		padding-right: 10px;
+	}
+
+	img {
+	}
+}
+
+.page__basement {
+	color: #9c9c9c;
+
+	.basement {
+		.col--align-left-sm {
+			font-size: 10px;
+		}
+	}
+}
+
+.contact-details {
+	margin-bottom: 30px;
+
+	li {
+		display: flex;
+		margin-bottom: 20px;
+
+		.text {
+			padding-left: 15px;
+		}
+
+		.subtitle {
+			font-size: 13px;
+			font-weight: 500;
+			color: #9c9c9c;
+			display: block;
+		}
+
+		a {
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			color: $text-black;
+			text-decoration: none;
+			position: relative;
+			&:hover {
+				&:after {
+					width: 100%;
+				}
+			}
+			&:after {
+				content: "";
+				width: 0%;
+				position: absolute;
+				height: 1px;
+				background-color: var(--footer-link-color-hover);
+				bottom: -2px;
+				left: 0;
+				transition: all 200ms linear;
+			}
+			span {
+				display: block;
+				font-size: 8px;
+				font-weight: 400;
+				color: #9c9c9c;
+			}
+		}
+	}
+}
+
+.footer__widget-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #515151;
+	margin-bottom: 20px;
+}
+
+.soc-groups > li {
+	padding: 0 10px 10px;
+}
+.soc-groups a {
+	width: auto;
+	height: auto;
+	border: 0 none;
+	color: #515151;
+}
+
+.footer__widget .menu-item a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #515151;
+	position: relative;
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+	&:after {
+		content: "";
+		width: 0%;
+		position: absolute;
+		height: 1px;
+		background-color: var(--footer-link-color-hover);
+		bottom: -2px;
+		left: 0;
+		transition: all 200ms linear;
+	}
+}
+
+.payment-icons {
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+	li {
+		padding: 0 10px;
+
+		max-width: 20%;
+		&:last-child {
+			max-width: initial;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+}
+
+.site-logo-centered {
+	text-align: center;
+	padding: 70px 0 30px;
+}
+.subscribe {
+	position: relative;
+	input[type="email"] {
+		width: 100%;
+		font-size: 13px;
+		line-height: 30px;
+		font-weight: 400;
+		color: #808080;
+		padding: 9px 20px;
+		background-color: #f2f2f2;
+		border: 1px solid #9c9c9c;
+	}
+	input[type="submit"] {
+		position: absolute;
+		right: 17px;
+		top: 50%;
+		font-size: 15px;
+		font-weight: 600;
+		color: #9c9c9c;
+		transform: translate(0, -50%);
+	}
+}
+
+/* custom checkbox styling for contact form 7 checkbox */
+.agree-to-terms {
+	position: relative;
+	cursor: pointer;
+	margin-top: 25px;
+	a {
+		display: block;
+		margin-left: 36px;
+		font-size: 13px !important;
+		color: #515151;
+		text-decoration: none;
+		position: relative;
+		font-weight: 400;
+		strong {
+			font-weight: 600;
+		}
+		&:hover {
+			&:after {
+				width: 100%;
+			}
+		}
+		&:after {
+			content: "";
+			width: 0%;
+			position: absolute;
+			height: 1px;
+			background-color: var(--footer-link-color-hover);
+			bottom: -2px;
+			left: 0;
+			transition: all 200ms linear;
+		}
+	}
+}
+.agree-to-terms input[type="checkbox"] {
+	position: absolute;
+	visibility: hidden;
+	width: 22px;
+	height: 22px;
+	top: -5px;
+	left: 0;
+}
+.agree-to-terms input[type="checkbox"] + span:before {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 22px;
+	width: 22px;
+	top: -5px;
+	left: 0px;
+	background-image: url(../images/checkbox-uncheck.svg);
+}
+.agree-to-terms input[type="checkbox"] + span:after {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 22px;
+	width: 22px;
+	top: -5px;
+	left: 0px;
+	background-image: url(../images/checkbox-checked.svg);
+	visibility: hidden;
+}
+.agree-to-terms input[type="checkbox"]:checked + span:before {
+	visibility: hidden;
+}
+.agree-to-terms input[type="checkbox"]:checked + span:after {
+	visibility: visible;
+}
+
+.mc4wp-form {
+	margin-bottom: 40px;
+}

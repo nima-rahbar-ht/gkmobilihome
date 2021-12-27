@@ -1,0 +1,49 @@
+.btn-style {
+	background-color: transparent;
+	border: 1px solid #515151;
+	color: #515151 !important;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: -0.035em;
+	line-height: 20px;
+	min-width: 153px;
+	padding: 8px 16px;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-color: #515151;
+		color: #fff !important;
+	}
+
+	&--lg {
+		min-width: 200px;
+		padding-bottom: 14px;
+		padding-top: 14px;
+	}
+
+	@include media("<sm") {
+		font-size: 14px;
+		min-width: 120px;
+	}
+
+	&--inverse {
+		background-color: #515151;
+		color: #fff !important;
+
+		// &:hover {
+		// 	background-color: transparent;
+		// 	color: #515151 !important;
+		// }
+	}
+}
+
+.btn-default,
+.btn {
+	transition: all 200ms ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

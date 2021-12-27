@@ -1,0 +1,18 @@
+.page__mobile {
+	background-color: $green;
+}
+
+.mobile-nav__item {
+	border-color: $green;
+}
+
+.mobile-nav__item--separator {
+	background-color: $light-green;
+}
+
+.mobile-nav__item--active > .mobile-nav__link,
+.mobile-nav__item.current-menu-item > .mobile-nav__link,
+.mobile-nav__link:focus,
+.mobile-nav__link:hover {
+	background-color: $light-green;
+}

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+$light-green: #afca05 !default;
+$green: #14723e !default;
+$text-black: #2d2d2d !default;
+$text-black-alt: #515151 !default;
+$text-grey: #9c9c9c !default;
+$yellow: #ffdc00 !default;
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+$breakpoint-xs: 500px !default;
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 992px !default;
+$breakpoint-lg: 1200px !default;
+
+$breakpoint-bundles: 1024px !default;
+
+$breakpoints: (
+	"xs": $breakpoint-xs,
+	"sm": $breakpoint-sm,
+	"md": $breakpoint-md,
+	"lg": $breakpoint-lg,
+	"bundles-breakpoint": $breakpoint-bundles,
+);
+
+:root {
+	--base-main-link-color: #14723e !important;
+	--btn-primary-bg: #14723e !important;
+	--btn-primary-border: #14723e !important;
+	--btn-default-bg: #14723e !important;
+	--btn-default-bg: #14723e !important;
+	--btn-default-border: #14723e !important;
+	--btn-default-color: #ffffff !important;
+	--btn-default-hover-border: #14723e !important;
+	--btn-default-hover-bg: #14723e !important;
+	--btn-default-hover-color: #ffffff !important;
+	--btn-primary-hover-color: #ffffff !important;
+	--btn-primary-hover-border: #14723e !important;
+	--btn-primary-hover-bg: #14723e !important;
+	--footer-link-color-hover: #14723e !important;
+	--theme-main-color: #14723e !important;
+	--base-main-link-hover-color: #afca05 !important;
+}
