@@ -39,7 +39,7 @@
         <i class="user-panel__ico user-panel__ico--wishlist">
                 <?php premmerce_the_svg('heart'); ?>
             </i>
-            <?php /* esc_html_e('Wishlist','saleszone'); */ ?> <?php /* echo esc_html($total); */  ?>
+            <?php esc_html_e('Wishlist','saleszone'); ?> <?php echo esc_html($total); ?>
         </a>
     <?php endif; ?>
 <?php endif; ?>
