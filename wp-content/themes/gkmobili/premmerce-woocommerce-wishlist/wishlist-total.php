@@ -35,7 +35,8 @@
         </div>
     <?php else: ?>
         <a class="user-panel__link <?php echo !$total ? 'user-panel__link--empty':''?>" href="<?php echo esc_url(premmerce_get_wishlist_url()); ?>" rel="nofollow" data-wishlist-total-fragment>
-            <i class="user-panel__ico user-panel__ico--wishlist">
+        <span class="d-n"><?= __("Wishlist", "saleszone") ?></span>
+        <i class="user-panel__ico user-panel__ico--wishlist">
                 <?php premmerce_the_svg('heart'); ?>
             </i>
             <?php /* esc_html_e('Wishlist','saleszone'); */ ?> <?php /* echo esc_html($total); */  ?>
