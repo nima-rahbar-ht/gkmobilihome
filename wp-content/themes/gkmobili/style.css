@@ -23,6 +23,7 @@ iframe{
 p {
     letter-spacing: -1px;
 }
+.d-n{display: none !important;}
 .filter__price-control:focus, .filter__slider-control:focus, .form-control:focus, .form__select:focus, .product-search__form-control:focus, .quantity__input:focus, .variants-select select:focus, .widget_archive select:focus, .widget_categories select:focus, .widget_meta select:focus, .widget_pages select:focus, .widget_premmerce_user_menu select:focus, .widget_price_filter input:focus, .widget_product_categories select:focus, .widget_recent_comments select:focus, .widget_recent_entries select:focus, .woocommerce-address-fields .form-row .input-text:focus, .woocommerce-address-fields .form-row select:focus, .wpcf7 .wpcf7-form-control-wrap textarea:focus, .wpcf7 .wpcf7-form-control:focus:not([type=submit]):not(textarea), input:focus[name=billing_state] {
     box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(184 143 66 / 25%);
 }
