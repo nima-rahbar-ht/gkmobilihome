@@ -35,12 +35,17 @@ $template = premmerce_get_catalog_template();
                 <?php wc_print_notices(); ?>
             </div>
         <?php endif; ?>
+            <?php
+            //TODO: Disabled for WAVE Tool
+            /*
             <div class="grid-list-shop-cnt">
                 <div class="grid-list-shop-inner">
                     <a href="#" class="grid-shop"></a>
                     <a href="#" class="list-shop"></a>
                 </div>
             </div>
+            */
+            ?>
         <?php if (have_posts()): ?>
             <div class="content__row">
                 <div class="pc-product-loop pc-product-loop--per-row-<?php echo esc_attr(premmerce_option('shop-category-per-row')); ?> <?php if ($template == 'list'): ?>pc-product-loop--list<?php else: ?>pc-product-loop--grid<?php endif; ?>" data-load-more-product--container>

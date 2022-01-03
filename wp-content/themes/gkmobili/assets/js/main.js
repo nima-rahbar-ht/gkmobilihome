@@ -48,7 +48,7 @@ jQuery(function ($) {
 	if (
 		$(".categories-list-more").length &&
 		$(".categories-list-more li").length >
-		$(".categories-list-more li:visible").length
+			$(".categories-list-more li:visible").length
 	) {
 		$(".categories-list-more").after(
 			'<div class="show-more-btn-wrapper"><a href="#" class="show-more-btn"><span class="text">Show more</span> <span class="icon"></span></a></div>'
@@ -64,14 +64,12 @@ jQuery(function ($) {
 	if (
 		$(".category-brands-widget").length &&
 		$(".category-brands-widget .brands-widget__list-item").length >
-		$(".category-brands-widget .brands-widget__list-item:visible").length
+			$(".category-brands-widget .brands-widget__list-item:visible").length
 	) {
 		$(".category-brands-widget .brands-widget__list").after(
 			'<div class="show-more-btn-wrapper"><a href="#" class="show-more-btn"><span class="text">Show more</span> <span class="icon"></span></a></div>'
 		);
 	}
-
-
 
 	/* const slider = $(".product-photo__thumbs");
 	$(slider).slick({
@@ -104,36 +102,31 @@ jQuery(function ($) {
 		}
 	})); */
 
-	$('ul.table-nav__items li.menu-item.table-nav__item').each(function () {
-		if ($(this).find('.mega-menu').length > 0) {
-			$(this).addClass('arrow_nav');
+	$("ul.table-nav__items li.menu-item.table-nav__item").each(function () {
+		if ($(this).find(".mega-menu").length > 0) {
+			$(this).addClass("arrow_nav");
 		}
 	});
 
 	/* hide size from shop loop */
-	if ($(".product-cut__info_cnt .pc-variations-table__row.pc-variations-table__row--type-default").has('Size')) {
-		jQuery('.product-cut__info_cnt .pc-variations-table__row.pc-variations-table__row--type-default').addClass('hide_elem');
+	if (
+		$(
+			".product-cut__info_cnt .pc-variations-table__row.pc-variations-table__row--type-default"
+		).has("Size")
+	) {
+		jQuery(
+			".product-cut__info_cnt .pc-variations-table__row.pc-variations-table__row--type-default"
+		).addClass("hide_elem");
 	}
 
-
 	/**
-	 * WAVE Tool Fixes
+	 * FIXME: WAVE Tool Fixes
 	 */
-$(document).ready(function () {
-	$(".pc-header-layout-1__header_toolbar .user-panel__item").eq(1).remove();
+	$(document).ready(function () {
+		$(".pc-header-layout-1__header_toolbar .user-panel__item").eq(1).remove();
 
-	jQuery(".product-loop-title > a, .basement_one").attr(
-		"style",
-		"color: #000 !important;"
-	);
+		jQuery(
+			".product-loop-title > a, .basement_one, .catalog-toolbar__label, .quantity__input"
+		).attr("style", "color: #000 !important;");
+	});
 });
-
-
-
-
-
-});
-
-
-
-
